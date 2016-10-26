@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color"
+    android:orientation="vertical" >
+
+    <!-- <include layout="@layout/main_head" /> -->
+
+
+    <View
+        android:id="@+id/category_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="#ffdddddd" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <FrameLayout
+            android:id="@+id/fragment_content"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+        </FrameLayout>
+        <RadioGroup
+            android:id="@+id/tabs_rg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/action_comment_text"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp" >
+
+            <RadioButton
+                android:id="@+id/tab_radiobutton_college"
+                style="@style/Tab_RadioButton"
+                android:drawableTop="@drawable/tab_homepage"
+                android:text="@string/tab_one"
+                android:textColor="@color/account_account_name"
+                android:checked="true"
+                />
+
+
+            <RadioButton
+                android:id="@+id/tab_radiobutton_roadshow"
+                style="@style/Tab_RadioButton"
+                android:drawableTop="@drawable/tab_twofragment"
+                android:text="@string/tab_two" />
+
+            <RadioButton
+                android:id="@+id/tab_radiobutton_fourthedition"
+                style="@style/Tab_RadioButton"
+                android:drawableTop="@drawable/tab_threefragment"
+                android:text="@string/tab_three" />
+
+            <!--   <RadioButton
+                  android:id="@+id/tab_radiobutton_investor"
+                  style="@style/Tab_RadioButton"
+                  android:drawableTop="@drawable/tab_homepage"
+                  android:text="@string/tab_four" /> -->
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
